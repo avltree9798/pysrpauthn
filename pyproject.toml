@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pysrpauthn"
+version = "0.1.0"
+description = "A Python implementation of Secure Remote Password (SRP) algorithm for Authn"
+authors = ["Anthony V <anthonyviriya98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cryptography = "^41.0.7"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+fastapi-sessions = "^0.3.2"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+tox = "^4.11.4"
+bandit = "^1.7.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
